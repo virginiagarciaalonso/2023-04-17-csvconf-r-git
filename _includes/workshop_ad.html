@@ -42,6 +42,9 @@
           <strong>Ayudantes:</strong>
           {{page.helper | join: ', ' %}}
           </p>
+          {% if page.Host %}
+          {{page.Host | join: ', ' %}}
+          </p>
           {% endif %}
         </div>
       </div>
