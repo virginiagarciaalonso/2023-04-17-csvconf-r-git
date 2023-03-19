@@ -77,7 +77,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Información general</h2>
 
 {% comment %}
 INTRODUCTION
@@ -129,16 +129,16 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Dónde:</strong>
   {{page.address}}.
-  Get directions with
+  Pueden obtener infomación sobre cómo llegar con
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
+  o
   <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Dónde:</strong>
   online at <a href="{{page.address}}">{{page.address}}</a>.
   If you need a password or other information to access the training,
   the instructor will pass it on to you before the workshop.
@@ -157,7 +157,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Cuándo:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -169,15 +169,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>Requerimientos:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Los participantes deberán traer una computadora portátil con
+    sistema operativo Mac, Linux o Windows (no una tablet, Chromebook, etc.) en el que tengan privilegios administrativos.
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  Deberán traer unos paquetes específicos instalados (se encuentran especificados <a href="#setup">debajo</a>).
 </p>
 
 {% comment %}
@@ -187,22 +187,21 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>Accessibilidad:</strong>
 {% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  Nos comprometemos a que este taller sea
+  accesible para cualquier participante. Hemos comprobado que:
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
+  <li>Las salas son accesibles para ingresar con sillas de rueda y scooters.</li>
+  <li>Hay baños accesibles.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+  Los materiales se proporcionarán antes del taller y, si es necesario, 
+  se facilitará material impreso en letra grande con antelación. Si podemos facilitarle el aprendizaje
+  (por ejemplo, intérpretes de lengua de signos o servicios de lactancia), 
+  póngase en contacto con nosotros (utilizando los datos que figuran más abajo) e
+  intentaremos proporcionárselos.
 </p>
 {% else %}
   We are dedicated to providing a positive and accessible learning environment for all. Please
@@ -217,12 +216,12 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Contacto:</strong>
+  Por favor escriba a
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
-  or
+  o
   {% else %}
   {% unless forloop.first %}
   ,
@@ -233,13 +232,13 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  para más información.
 </p>
 
 <p id="roles">
   <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  Para saber más sobre los roles en el taller (quién hará qué),
+  pueden ver <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> el FAQ de nuestro Workshop</a>.
 </p>
 
 {% comment %}
@@ -268,15 +267,15 @@ Edit the text to match who can attend the workshop. For instance:
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">Código de conducta</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Todas las personas que participen en las actividades de The Carpentries deben guiarse por el <a href="https://carpentrieshandbook.readthedocs.io/es/latest/topic_folders/policies/code-of-conduct.html">Código de Conducta</a>. Ese documento también indica los pasos a seguir en el caso de que haya un incidente.
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Notifique un incidente de conducta</button>
   </a>
 </p>
 <hr/>
@@ -308,11 +307,11 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
+<h2 id="surveys">Encuestas</h2>
+<p>Por favor, completá las encuestas pre y post Workshop (están en inglés).</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.incubator_pre_survey }}">Encuesta Pre-Workshop</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Encuesta Post-Workshop</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
@@ -352,7 +351,7 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Cronograma</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
@@ -390,10 +389,10 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Instalación y configuración</h2>
 
 <p>
-  To participate in a
+  Para participar de este
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -402,13 +401,13 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  vas a necesitar acceso al software indicado en la siguiente sección.
+  Además, vas a necesitar un navegador actualizado.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Mantenemos una lista de problemas comunes que pueden ocurrar durante la instalación como referencia para las instructoras
+  e instructores que pueden ser útiles en la
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">página Wiki de Problemas y Soluciones de Configuración</a>.
 </p>
 
 {% comment %}
