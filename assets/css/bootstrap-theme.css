@@ -69,7 +69,7 @@ fieldset[disabled] .btn-danger {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #dbdbdb;
+  border-color: #181e8c;
   text-shadow: 0 1px 0 #fff;
   border-color: #ccc;
 }
@@ -81,7 +81,7 @@ fieldset[disabled] .btn-danger {
 .btn-default:active,
 .btn-default.active {
   background-color: #e0e0e0;
-  border-color: #dbdbdb;
+  border-color: #181e8c;
 }
 .btn-default.disabled,
 .btn-default[disabled],
