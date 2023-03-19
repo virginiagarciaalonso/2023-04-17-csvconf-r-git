@@ -3,10 +3,6 @@
 {% include warning-curriculum.html %}
 {% endunless %}
 
-{% include install_instructions/shell.html %}
-{% include install_instructions/git.html %}
-{% include install_instructions/editor.html %}
-
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
 {% elsif site.flavor == "python" %}
@@ -17,6 +13,8 @@
 {% else %}
 {% include warning-flavor.html %}
 {% endif %}
+
+{% include install_instructions/git.html %}
 
 {% comment %}
 The following setup instructions are commented out because Carpentries workshops
