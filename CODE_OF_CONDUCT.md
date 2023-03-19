@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Codigo de conducta de colaboradores"
+title: "Código de conducta de colaboradores"
 ---
 Como colaboradores y mantenedores de este proyecto,
 nos comprometemos a seguir el [Código de conducta de The Carpentries][coc].
