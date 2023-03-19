@@ -169,7 +169,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #181e8c;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -1147,7 +1147,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #181e8c;
 }
 .sr-only {
   position: absolute;
@@ -1410,7 +1410,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #181e8c;
 }
 ul,
 ol {
@@ -1477,7 +1477,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #181e8c;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1502,7 +1502,7 @@ blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   text-align: right;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #181e8c;
   border-left: 0;
 }
 .blockquote-reverse footer:before,
@@ -4105,7 +4105,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #ddd;
+  border-color: #181e8c #181e8c #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
