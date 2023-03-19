@@ -34,6 +34,7 @@ online workshops.
     <meta name="eventbrite" content="{{page.eventbrite}}" />
     <meta name="instructor" content="{{page.instructor|join:'|'}}" />
     <meta name="helper" content="{{page.helper|join:'|'}}" />
+    <meta name="Host" content="{{page.Host|join:'|'}}" />
     <meta name="contact" content="{{page.email|join:'|'}}" />
     <meta name="carpentry" content="{{site.carpentry}}" />
 
@@ -64,7 +65,7 @@ online workshops.
     <title>{{ page.venue }}: {{ page.humandate }}</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" background-color:#d1ddeb;>
       {% include navbar.html %}
       {% include workshop_ad.html %}
 {{ content }}
