@@ -308,7 +308,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Encuestas</h2>
-<p>Por favor, completá las encuestas pre y post Workshop (están en inglés).</p>
+<p>Por favor, completá las encuestas pre y post workshop (están en inglés).</p>
 {% if site.carpentry == "incubator" %}
 <p><a href="{{ site.incubator_pre_survey }}">Encuesta Pre-Workshop</a></p>
 <p><a href="{{ site.incubator_post_survey }}">Encuesta Post-Workshop</a></p>
@@ -322,8 +322,8 @@ in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
 change the value of `carpentry` to `incubator`.
 </div>
 {% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Encuesta pre-workshop</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Encuesta post-workshop</a></p>
 {% endif %}
 
 <hr/>
